@@ -1,0 +1,41 @@
+/* VAULTBREAK — style.css. One job: the page around the canvas. */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0b0f14;
+  color: #e8eef4;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+}
+
+canvas {
+  display: block;
+  width: min(960px, 96vw);
+  height: auto;
+  border: 2px solid #33465c;
+  border-radius: 8px;
+  background: #101820;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  cursor: crosshair;
+}
+
+.hint {
+  margin: 0;
+  font-size: 13px;
+  color: #9fb3c8;
+  text-align: center;
+}
